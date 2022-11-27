@@ -7,38 +7,34 @@
     <style>
       body {
         display: flex;
-        height: 100vh;
-        margin: 0 75px;
+        margin: 0;
       }
       .wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         gap: 50px;
+        margin: 20px;
       }
       .wrapper img {
         width: 50%;
        
         border: 1px solid #ccc;
       }
-      @media (max-width: 768px) {
-        body {
-          margin: 75px;
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .wrapper img {
+          width: 90%;
         }
-        .wrapper {
-          flex-direction: column;
-          gap: 50px;
-        }
+      }
+      @media (min-width: 576px) and (max-width: 768px) {
         .wrapper img {
           width: 90%;
         }
       }
       @media (min-width: 320px) and (max-width: 575px) {
-        body {
-          margin: 0 75px;
-        }
         .wrapper img {
-          width: 150%;
+          width: 100%;
         }
       }
     </style>
@@ -47,6 +43,7 @@
     <div class="wrapper">
       <img src="img/html_css.png" alt="Основы HTML и CSS">
       <img src="img/js_1.png" alt="Основы программирования на JavaScript I">
+      <img src="img/js_2.png" alt="Основы программирования на JavaScript II">
     </div>
   </body>
 </html>
